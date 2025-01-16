@@ -1,0 +1,6 @@
+.land-btn button {
+  border: 1px solid var(--btn-border) !important;
+  border-radius: 8px;
+  padding: 10px;
+  color: var(--main-color);
+}

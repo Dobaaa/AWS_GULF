@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+
+/* Global values */
+:root {
+  --white: rgba(255, 255, 255, 1);
+  --main-color: rgba(0, 53, 64, 1);
+  --gray: rgba(102, 102, 102, 1);
+  --btn-border: rgba(41, 95, 112, 1);
+  --light-green: rgba(234, 245, 246, 1);
+}
+
+body {
+  font-family: "Cairo", serif;
+}
+.shadow-custom {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.custom-btn {
+  background-color: var(--main-color);
+  padding: 16px 24px;
+  color: var(--white);
+  text-align: center;
+  border-radius: 10px;
+}
+nav {
+  white-space: nowrap;
+}

@@ -1,0 +1,27 @@
+.brands {
+  padding: 20px;
+  background-color: var(--white);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.brand-txt {
+  white-space: nowrap;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  display: flex;
+  gap: 2rem; /* مسافة بين الصور */
+  animation: scroll 5s linear infinite;
+  will-change: transform;
+}
+
+.animate-scroll:hover {
+  animation-play-state: paused; /* إيقاف الحركة عند التمرير فوق الصور */
+}
