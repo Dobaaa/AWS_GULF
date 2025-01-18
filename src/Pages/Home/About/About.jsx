@@ -20,23 +20,24 @@ const About = () => {
     return () => clearInterval(interval); // Cleanup the interval on component unmount
   }, []);
   return (
-    <div className="grid  grid-cols-12 gap-5 p-5">
+    <div className="grid  grid-cols-12 gap-5 p-5 pt-14">
       <div className="About-txt col-span-12 md:col-span-6  text-end">
         <h1 className="text-[32px] pb-4"> Aws-Gulf حول </h1>
         <p className="pb-4 text-gray-400 text-[16px]">
           تعتبر aws شركة رائدة في مجال تكامل نظم تكنولوجيا المعلومات الخدمات،
-          تأسست في عام 2024 مع تركيز على تقديم حلول الأجهزة التكنولوجية
-          المتطورة. إدراكًا منها للتطور المستمر في المشهد التكنولوجي واحتياجات
-          السوق المتغيرة بسرعة، وسعت الشركة محفظتها لتشمل خدمات البرمجيات. لم
-          يكن هذا الإضافة مجرد تحسين، بل ضرورة لتلبية متطلبات الأعمال الحديثة
-          المتطورة، من خلال دمج خدمات البرمجيات، تهدف AWS GULF إلى توفير حلول
-          شاملة تمكّن عملاءها من التميز في سوق تنافسية. ومع التزامها بالابتكار
-          والتميز تكرس AWS GULF جهودها لتحقيق تأثير كبير من خلال تلبية وتجاوز
-          توقعات العملاء.
+          تأسست في عام <br /> 2024 مع تركيز على تقديم حلول الأجهزة التكنولوجية
+          المتطورة. إدراكًا منها للتطور المستمر في المشهد <br />
+          التكنولوجي واحتياجات السوق المتغيرة بسرعة، وسعت الشركة محفظتها لتشمل
+          خدمات البرمجيات. لم <br /> يكن هذا الإضافة مجرد تحسين، بل ضرورة لتلبية
+          متطلبات الأعمال الحديثة المتطورة، من خلال دمج خدمات <br />
+          البرمجيات، تهدف AWS GULF إلى توفير حلول شاملة تمكّن عملاءها من التميز
+          في سوق تنافسية. <br />
+          ومع التزامها بالابتكار والتميز تكرس AWS GULF جهودها لتحقيق تأثير كبير
+          من خلال تلبية وتجاوز توقعات العملاء.
         </p>
         <div className="About-btn flex justify-end gap-4">
           <div className="tech">
-            <button className="custom-btn w-full ">التكنولوجيا</button>
+            <button className="gradient-btn w-full ">التكنولوجيا</button>
             <ul className="text-gray-400 text-[16px] mt-3">
               <li>تصميم واجهات المستخدم وتجربة المستخدم</li>
               <li>
@@ -48,7 +49,7 @@ const About = () => {
             </ul>
           </div>
           <div className="creative">
-            <button className="custom-btn w-full ">الابداع</button>
+            <button className="gradient-btn w-full ">الابداع</button>
             <ul className="text-gray-400 text-[16px] mt-3">
               <li>تصاميم رائدة</li>
               <li>إنشاء محتوى إبداعي</li>
@@ -65,7 +66,7 @@ const About = () => {
       </div>
       <div className="var-words col-span-12 md:col-span-6 flex justify-center">
         <div className="word-body bg-[var(--light-green)] h-[500px]  md:h-full flex justify-center items-center w-[50%]">
-          <h1 className="text-[64px] text-[var(--main-color)]">
+          <h1 className="text-[64px] text-[var(--main-color)] p-4 lg:p-0">
             {words[currentWordIndex]}
           </h1>
         </div>

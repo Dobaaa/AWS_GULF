@@ -3,4 +3,9 @@
   border-radius: 8px;
   padding: 10px;
   color: var(--main-color);
+  transition: 0.5s;
+}
+.land-btn button:hover {
+  background: linear-gradient(to bottom, rgb(49, 94, 107), rgb(30, 60, 70));
+  color: var(--white);
 }

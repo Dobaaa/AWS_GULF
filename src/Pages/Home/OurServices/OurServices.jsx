@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -12,11 +12,19 @@ import { Link } from "react-router";
 import ServiceImg from "../../../assets/service2.jpeg";
 import ServiceImgTwo from "../../../assets/service.jpeg";
 import ServiceImgThree from "../../../assets/service3.jpg";
+//lazy loading
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const OurServices = () => {
   return (
     <div className="p-12">
-      <h1></h1>
+      <h1 className="text-center md:text-end md:me-8 p-3 text-[36px] text-[var(--main-color)]">
+        خدماتنا
+      </h1>
+      <p className="text-center md:text-end md:me-8 p-3 text-[16px] text-gray-400">
+        يسعدنا أن نقدم أنفسنا كمزود حلول مستقل لأهم العلامات التجارية العالمية
+        المتعلقة بصناعة تكنولوجيا المعلومات وتطوير البرمجيات.
+      </p>
       <Swiper
         spaceBetween={50} // المسافة الافتراضية بين الشرائح
         slidesPerView={3} // الافتراضي هو 3 شرائح للشاشات الكبيرة
@@ -44,12 +52,12 @@ const OurServices = () => {
       >
         <SwiperSlide data-history="1">
           <div className="card">
-            <img src={ServiceImg} alt="" />
+            <LazyLoadImage src={ServiceImg} alt="" />
             <h3>تصميم يركز على المستخدم</h3>
             <p>في سعينا لنجاح منتجاتك، نصمم تجربة مستخدم مميزة وجذابة</p>
             <Link to="/" className="service-link">
               <i
-                class="fa-solid fa-arrow-down fa-rotate-by icon"
+                className="fa-solid fa-arrow-down fa-rotate-by icon"
                 style={{ "--fa-rotate-angle": "115deg" }}
               ></i>
               <span>اعرف المزيد</span>
@@ -59,12 +67,12 @@ const OurServices = () => {
         <SwiperSlide data-history="Slide 2">
           {" "}
           <div className="card">
-            <img src={ServiceImgTwo} alt="" />
+            <LazyLoadImage src={ServiceImgTwo} alt="" />
             <h3>تطوير تطبيقات الجوال</h3>
             <p> نقدم تطبيقات جوال مميزة تلبي احتياجاتك بأحدث التقنيات </p>
             <Link to="/" className="service-link">
               <i
-                class="fa-solid fa-arrow-down fa-rotate-by icon"
+                className="fa-solid fa-arrow-down fa-rotate-by icon"
                 style={{ "--fa-rotate-angle": "115deg" }}
               ></i>
               <span>اعرف المزيد</span>
@@ -73,12 +81,12 @@ const OurServices = () => {
         </SwiperSlide>
         <SwiperSlide data-history="3">
           <div className="card">
-            <img src={ServiceImgThree} alt="" />
+            <LazyLoadImage src={ServiceImgThree} alt="" />
             <h3>تصميم يركز على المستخدم</h3>
             <p>في سعينا لنجاح منتجاتك، نصمم تجربة مستخدم مميزة وجذابة</p>
             <Link to="/" className="service-link">
               <i
-                class="fa-solid fa-arrow-down fa-rotate-by icon"
+                className="fa-solid fa-arrow-down fa-rotate-by icon"
                 style={{ "--fa-rotate-angle": "115deg" }}
               ></i>
               <span>اعرف المزيد</span>
@@ -88,12 +96,12 @@ const OurServices = () => {
         <SwiperSlide data-history="Slide 4">
           {" "}
           <div className="card">
-            <img src={ServiceImg} alt="" />
+            <LazyLoadImage src={ServiceImg} alt="" />
             <h3>تصميم يركز على المستخدم</h3>
             <p>في سعينا لنجاح منتجاتك، نصمم تجربة مستخدم مميزة وجذابة</p>
             <Link to="/" className="service-link">
               <i
-                class="fa-solid fa-arrow-down fa-rotate-by icon"
+                className="fa-solid fa-arrow-down fa-rotate-by icon"
                 style={{ "--fa-rotate-angle": "115deg" }}
               ></i>
               <span>اعرف المزيد</span>
@@ -103,12 +111,12 @@ const OurServices = () => {
         <SwiperSlide data-history="5">
           {" "}
           <div className="card">
-            <img src={ServiceImg} alt="" />
+            <LazyLoadImage src={ServiceImg} alt="" />
             <h3>تطوير تطبيقات الجوال</h3>
             <p> نقدم تطبيقات جوال مميزة تلبي احتياجاتك بأحدث التقنيات</p>
             <Link to="/" className="service-link">
               <i
-                class="fa-solid fa-arrow-down fa-rotate-by icon"
+                className="fa-solid fa-arrow-down fa-rotate-by icon"
                 style={{ "--fa-rotate-angle": "115deg" }}
               ></i>
               <span>اعرف المزيد</span>
@@ -118,12 +126,12 @@ const OurServices = () => {
         <SwiperSlide data-history="Slide 6">
           {" "}
           <div className="card">
-            <img src={ServiceImg} alt="" />
+            <LazyLoadImage src={ServiceImg} alt="" />
             <h3>تصميم يركز على المستخدم</h3>
             <p>في سعينا لنجاح منتجاتك، نصمم تجربة مستخدم مميزة وجذابة</p>
             <Link to="/" className="service-link">
               <i
-                class="fa-solid fa-arrow-down fa-rotate-by icon"
+                className="fa-solid fa-arrow-down fa-rotate-by icon"
                 style={{ "--fa-rotate-angle": "115deg" }}
               ></i>
               <span>اعرف المزيد</span>
