@@ -4,6 +4,7 @@ import Logo from "../../assets/logo.png";
 import "./Home.css";
 import BrandsSection from "./BrandsSection/BrandsSection";
 import About from "./About/About";
+import OurServices from "./OurServices/OurServices";
 const Home = () => {
   return (
     <div>
@@ -11,14 +12,14 @@ const Home = () => {
       {/* first section Landing Area */}
       <div className="landing ">
         <div className="container grid grid-cols-12 gap-4 items-center p-8">
-          <div class="land-img col-span-8 p-4 flex flex-col items-center">
+          <div class="land-img  col-span-12 md:col-span-8 p-4 flex flex-col items-center">
             <img src={Logo} alt="" className="w-[282px] h-[273px]" />
             <div className="land-btn flex gap-12">
               <button>Marketing Solutions</button>
               <button>Software Solutions</button>
             </div>
           </div>
-          <div class="land-txt col-span-4 p-4 text-end">
+          <div class="land-txt col-span-12 md:col-span-4 p-4 text-end">
             <h1 className="text-3xl text-[var(--main-color)] mb-4">
               دليلك نحو المستقبل
             </h1>
@@ -44,6 +45,8 @@ const Home = () => {
       <BrandsSection />
       {/* seconed section About Area */}
       <About />
+      {/* Third section services  Area */}
+      <OurServices />
     </div>
   );
 };

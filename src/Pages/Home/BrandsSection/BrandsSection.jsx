@@ -10,7 +10,7 @@ import "./BrandSection.css";
 
 const BrandsSection = () => {
   return (
-    <div className="brands overflow-hidden py-6 flex ">
+    <div className="brands overflow-hidden py-6 flex items-center">
       <div className="relative w-full overflow-hidden flex justify-evenly">
         <div className="flex items-center animate-scroll">
           <img src={microSoftImg} alt="Microsoft" className="h-12" />

@@ -2,24 +2,33 @@
   padding: 20px;
   background-color: var(--white);
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  overflow: hidden;
 }
+
 .brand-txt {
   white-space: nowrap;
 }
+
 @keyframes scroll {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-200%); /* تحريك بمقدار صورتين */
   }
 }
 
 .animate-scroll {
   display: flex;
   gap: 2rem; /* مسافة بين الصور */
-  animation: scroll 5s linear infinite;
+  animation: scroll 15s linear infinite;
   will-change: transform;
+  width: calc(100% * 2); /* عرض الحاوية لاستيعاب صورتين */
+}
+
+.animate-scroll img {
+  flex: 0 0 auto; /* عدم تمدد الصور */
+  width: calc(50% - 1rem); /* عرض الصور بالنسبة للحاوية */
 }
 
 .animate-scroll:hover {
